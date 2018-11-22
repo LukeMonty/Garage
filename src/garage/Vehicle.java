@@ -19,14 +19,13 @@ public abstract class Vehicle {
 	
 	public String getTypeOfVehicle() {
 		
-		return this.getClass().getName().substring(7); // This is because the name is called from class first, e.g "garage.Car" as the Vehicles are stored in "garage"
+		return this.getClass().getName().substring(7); // This is because the name is called from the garage class first, e.g "garage.Car" as the Vehicles are stored in "garage"
 		
 	}
 	
 	public String toString() {
+		
 		return "This is a " + this.getTypeOfVehicle();
-		
-		
 		
 	}
 	
